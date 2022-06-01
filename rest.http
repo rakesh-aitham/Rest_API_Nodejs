@@ -1,0 +1,29 @@
+###Get a list of all products
+GET http://localhost:3000/products
+
+### Create a product
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "name": "iPhone 11",
+  "price": 5999
+}
+
+### GET a product by id
+GET http://localhost:3000/products/5df118b3c86e5826958b661a
+
+### Update a product by id
+PATCH  http://localhost:3000/products/62971807e500df6b784c11cd
+Content-Type: application/json
+
+{
+  "price": 6999
+}
+
+
+### Delete a product by id
+DELETE  http://localhost:3000/products/629717d5e500df6b784c11ca
+
+### 404 route Not Found
+GET http://localhost:3000/abc_xyz
